@@ -67,7 +67,8 @@ exit 0
 ```
 
 *(Скриншот 2: Вывод команды crontab -l)*
-<img width="663" height="559" alt="image" src="https://github.com/user-attachments/assets/b1cf45ab-34c5-4872-a796-8e6125b308b9" />
+<img width="636" height="516" alt="image" src="https://github.com/user-attachments/assets/82da46be-4416-4c5b-a9ba-836e1448e920" />
+
 
 
 ---
