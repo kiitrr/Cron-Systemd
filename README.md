@@ -34,13 +34,15 @@
 ```bash
 #!/bin/bash
 TARGET_URL="https://api.example.com/webhook"
-curl -s -w "\nHTTP Status: %{http_code}\n" "$TARGET_URL" >> /home/david44/cron_requests.log 2>&1
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] Request sent to $TARGET_URL" >> /home/david44/cron_requests.log
+curl -s -w "\nHTTP Status: %{http_code}\n" "$TARGET_URL" >> /home/Renata/cron_requests.log 2>&1
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] Request sent to $TARGET_URL" >> /home/Renata/cron_requests.log
 exit 0
+
 ```
 
 *(Скриншот 1: Содержимое скрипта send_request.sh)*
-<img width="933" height="344" alt="image" src="https://github.com/user-attachments/assets/765e7411-3ff2-42a3-91b3-bbd48fd9c238" />
+<img width="1186" height="159" alt="image" src="https://github.com/user-attachments/assets/b7404587-c330-4aa1-a9fa-e6ae082015a9" />
+
 
 
 ---
