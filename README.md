@@ -92,7 +92,8 @@ HTTP Status: 000
 ```
 
 *(Скриншот 3: Содержимое лог-файла)*
-<img width="659" height="204" alt="image" src="https://github.com/user-attachments/assets/f1542934-86b8-457a-8849-5cbaf16f8ffc" />
+<img width="640" height="138" alt="image" src="https://github.com/user-attachments/assets/e0e33e2a-724e-4311-9ed5-1e33098786a2" />
+
 
 
 ---
