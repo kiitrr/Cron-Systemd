@@ -3,9 +3,8 @@
 # 📋 ОТЧЕТ: Сравнение Cron и Systemd для планирования задач в Linux
 
 ## 📌 Информация о выполнении
-- **Студент:** Султанаева Рената
+- **Студент:** Швыркова Яна
 - **Группа:** ПИ-430Б
-- **Дата выполнения:** 13.12.2025
 
 ---
 
@@ -16,7 +15,7 @@
 
 ## 📁 Структура проекта
 ```
-/home/david44/
+/home/Shvyrkova/
 ├── cron_scripts/
 │   └── send_request.sh      # Bash-скрипт для отправки HTTP-запросов
 ├── cron_requests.log        # Лог-файл выполнения скрипта через Cron
@@ -34,8 +33,8 @@
 ```bash
 #!/bin/bash
 TARGET_URL="https://api.example.com/webhook"
-curl -s -w "\nHTTP Status: %{http_code}\n" "$TARGET_URL" >> /home/Renata/cron_requests.log 2>&1
-echo "[$(date '+%Y-%m-%d %H:%M:%S')] Request sent to $TARGET_URL" >> /home/Renata/cron_requests.log
+curl -s -w "\nHTTP Status: %{http_code}\n" "$TARGET_URL" >> /home/Shvyrkova/cron_requests.log 2>&1
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] Request sent to $TARGET_URL" >> /home/Shvyrkova/cron_requests.log
 exit 0
 
 ```
@@ -51,12 +50,12 @@ exit 0
 **Команда для просмотра:** `crontab -l`
 
 ```
-*/5 * * * * /home/david44/cron_scripts/send_request.sh
+*/5 * * * * /home/Shvyrkova/cron_scripts/send_request.sh
 ```
 
 **Объяснение формата:**
 ```
-*/5  *    *    *    *    /home/david44/cron_scripts/send_request.sh
+*/5  *    *    *    *    /home/Shvyrkova/cron_scripts/send_request.sh
  │    │    │    │    │      │
  │    │    │    │    │      └── Команда для выполнения
  │    │    │    │    └───────── День недели (0-7, 0=воскресенье)
